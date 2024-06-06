@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.newClass {
+  background-color: #405375;
+}
+.btn-secondary {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, rgb(238, 138, 143), rgb(175, 114, 219))
+      padding-box,
+    linear-gradient(to right, rgb(238, 138, 143), rgb(175, 114, 219)) border-box;
+  border: 2px solid transparent;
+  /* border-radius: 0.375rem; Rounded */
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: linear-gradient(to right, rgb(238, 138, 143), rgb(175, 114, 219));
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(to right, rgb(175, 114, 219), rgb(238, 138, 143))
+      padding-box,
+    linear-gradient(to right, rgb(175, 114, 219), rgb(238, 138, 143)) border-box;
+  color: linear-gradient(to right, rgb(238, 138, 143), rgb(175, 114, 219));
+}
+
+/* Positioning for the image */
+.button-wrapper .hero-cta {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
